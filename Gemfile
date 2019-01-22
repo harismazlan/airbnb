@@ -3,7 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.0'
 
-
+# Adds omniauth gem
+gem 'omniauth'
+# Adds omniauth-google-oauth2 gem
+gem 'omniauth-google-oauth2'
 # Adds figaro gem
 gem 'figaro'
 # Adds clearance gem
