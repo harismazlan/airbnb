@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.0'
 
+
+# Adds figaro gem
+gem 'figaro'
 # Adds clearance gem
 gem 'clearance'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
