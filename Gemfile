@@ -3,6 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.0'
 
+
+# Adds faker gem
+gem 'faker'
 # Adds omniauth gem
 gem 'omniauth'
 # Adds omniauth-google-oauth2 gem

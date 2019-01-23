@@ -1,4 +1,5 @@
 <%= form_for :session, url: session_path do |form| %>
+
   <div class="text-field">
     <%= form.label :email %>
     <%= form.text_field :email, type: 'email' %>
@@ -19,4 +20,5 @@
     <% end %>
     <%= link_to t(".forgot_password"), new_password_path %>
   </div>
+  
 <% end %>
