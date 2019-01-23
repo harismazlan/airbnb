@@ -42,4 +42,14 @@ ActiveRecord::Base.transaction do
          
     Listing.create(listing)
   end
-end
+
+  # Select random users and change their roles to moderators
+  user_id = []
+    20.times do
+        user_id << rand(3..200)
+    end
+
+    user_id.each do |u|
+        user = User.find(u)
+        user.update(roles: 1)
+    end
