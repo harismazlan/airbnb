@@ -1,8 +1,5 @@
 <h1> Welcome to the AirBnB Homepage! </h1>
 
-<%= form_with url: users_path do |form| %>
-  <%= form.text_field :email %>
-  <%= form.submit %>
-<% end %>
-
-<%= link_to "Create New Listing", new_listing_path%>
+<%= link_to "Create New Listing", new_listing_path %>
+<%= link_to "View All Listings", listings_path %>
+<%= link_to "View Profile", user_path(current_user.id) %>

@@ -3,7 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.0'
 
-
+# Adds kaminari gem
+gem 'kaminari'
 # Adds faker gem
 gem 'faker'
 # Adds omniauth gem

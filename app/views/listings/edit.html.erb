@@ -1,0 +1,10 @@
+
+    <h1>Edit Listings</h1>
+    <%= form_with model: @listing, local: true do |form| %>
+    
+    <%= render partial: "listings/form", object: form %>
+
+    <div>
+        <%= form.submit class: "btn btn-primary"%>
+    </div>
+    <% end %>

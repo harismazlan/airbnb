@@ -1,0 +1,7 @@
+<h2><%= "Welcome #{@user.first_name} #{@user.last_name}! Below are your listings!" %></h2>
+
+<% @user.listings.each do |l| %>
+	<h3><%= l.name %> $<%= l.price %> Beds: <%= l.number_of_beds %> Country: <%= l.country %></h3>
+	<%= button_to "Delete", listing_path(l.id), method: "delete" %>
+	<%= button_to "Edit", edit_listing_path(l.id), method: "get" %>
+<% end %>

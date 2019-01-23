@@ -1,0 +1,39 @@
+<%= paginate @listings %>
+<table>
+	<tr>
+		<th>ID</th>
+		<th>Host ID</th>
+		<th>Name</th>
+		<th>Description</th>
+		<th>Address</th>
+		<th>State</th>
+		<th>Country</th>
+		<th>Number Of Beds</th>
+		<th>Price</th>
+		<th>Date Available From</th>
+		<th>Date Available Till</th>
+		<th>Property Type</th>
+		
+	</tr>
+
+	<% @listings.each do |l| %>
+
+	<tr>
+		<td><%= l.id %></td>
+		<td><%= l.user_id %></td>
+		<td><%= l.name %></td>
+		<td><%= l.description %></td>
+		<td><%= l.address %></td>
+		<td><%= l.state %></td>
+		<td><%= l.country %></td>
+		<td><%= l.number_of_beds %></td>
+		<td><%= l.price %></td>
+		<td><%= l.available_from %></td>
+		<td><%= l.available_to %></td>
+		<td><%= l.property_type %></td>
+	</tr>
+
+
+	<% end %>
+</table>
+<%= paginate @listings %>
